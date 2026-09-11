@@ -19,7 +19,7 @@
     <text x="430" y="160" text-anchor="middle" font-size="16" font-weight="700">Migration Platform</text>
     <text x="430" y="190" text-anchor="middle" font-size="12">AvePoint Fly</text><text x="430" y="211" text-anchor="middle" font-size="12">ShareGate</text><text x="430" y="232" text-anchor="middle" font-size="12">MigrationWiz</text>
     <text x="750" y="160" text-anchor="middle" font-size="16" font-weight="700">Target Tenant</text>
-    <text x="750" y="190" text-anchor="middle" font-size="12">Identity & Workload Setup</text><text x="750" y="211" text-anchor="middle" font-size="12">M365 Services</text><text x="750" y="232" text-anchor="middle" font-size="12">Access & Data</text>
+    <text x="750" y="190" text-anchor="middle" font-size="12">Identity &amp; Workload Setup</text><text x="750" y="211" text-anchor="middle" font-size="12">M365 Services</text><text x="750" y="232" text-anchor="middle" font-size="12">Access &amp; Data</text>
     <text x="1037" y="160" text-anchor="middle" font-size="16" font-weight="700">Cutover</text>
     <text x="1037" y="190" text-anchor="middle" font-size="12">User transition</text><text x="1037" y="211" text-anchor="middle" font-size="12">Validation</text><text x="1037" y="232" text-anchor="middle" font-size="12">Issue triage</text>
     <text x="625" y="363" text-anchor="middle" font-size="16" font-weight="700">Post-Migration Validation &amp; Hypercare</text>
