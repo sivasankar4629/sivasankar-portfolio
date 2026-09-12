@@ -9,6 +9,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Final Selected Work layout: consistent cards, centered second row, responsive. */
+    .project-grid-final {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 14px;
+      align-items: stretch;
+    }
+    .project-grid-final .project-card {
+      grid-column: span 2;
+      min-width: 0;
+      height: 100%;
+    }
+    .project-grid-final .project-card:nth-child(4) {
+      grid-column: 2 / span 2;
+    }
+    .project-grid-final .project-card:nth-child(5) {
+      grid-column: 4 / span 2;
+    }
+    @media (max-width: 850px) {
+      .project-grid-final { grid-template-columns: 1fr; }
+      .project-grid-final .project-card,
+      .project-grid-final .project-card:nth-child(4),
+      .project-grid-final .project-card:nth-child(5) { grid-column: auto; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -140,72 +167,70 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
-  <div class="section-heading">
-    <span class="eyebrow">04 — SELECTED WORK</span>
-    <h2>Technical Case Studies</h2>
-    <a class="section-link" href="https://github.com/sivasankar4629/m365-portfolio" target="_blank" rel="noopener">GitHub ↗</a>
-  </div>
-
-  <div class="project-grid">
-
-    <article class="project-card">
-      <div class="project-number">01</div>
-      <div class="project-meta">IDENTITY • HYBRID IDENTITY</div>
-      <h3>Microsoft Entra ID Hard Match</h3>
-      <p>Real-world identity synchronization scenario involving an existing cloud identity and an on-premises Active Directory object.</p>
-      <div class="project-tags">
-        <span>Entra ID</span><span>Entra Connect</span><span>Immutable ID</span><span>AD</span>
+    <section id="projects" class="section alt">
+      <div class="section-label">04 — SELECTED WORK</div>
+      <div class="project-heading">
+        <h2>Technical <span>Case Studies</span></h2>
+        <a href="https://github.com/sivasankar4629/m365-portfolio" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
-      <a class="project-link" href="projects/entra-id-hard-match/">View Case Study ↗</a>
-    </article>
 
-    <article class="project-card">
-      <div class="project-number">02</div>
-      <div class="project-meta">MIGRATION • MICROSOFT 365</div>
-      <h3>M365 Tenant-to-Tenant Migration</h3>
-      <p>Three migration projects across Exchange Online, OneDrive, Teams and SharePoint using multiple migration platforms.</p>
-      <div class="project-tags">
-        <span>AvePoint Fly</span><span>ShareGate</span><span>MigrationWiz</span>
+      <div class="projects project-grid-final">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <div>
+            <p class="project-type">IDENTITY • HYBRID IDENTITY</p>
+            <h3>Microsoft Entra ID Hard Match</h3>
+            <p>Real-world identity synchronization scenario involving an existing cloud identity and an on-premises Active Directory object.</p>
+            <div class="project-tags"><span>Entra ID</span><span>Entra Connect</span><span>Immutable ID</span><span>AD</span></div>
+            <a class="project-link" href="projects/entra-id-hard-match/">View Case Study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div>
+            <p class="project-type">MIGRATION • MICROSOFT 365</p>
+            <h3>M365 Tenant-to-Tenant Migration</h3>
+            <p>Three migration projects across Exchange Online, OneDrive, Teams and SharePoint using multiple migration platforms.</p>
+            <div class="project-tags"><span>AvePoint Fly</span><span>ShareGate</span><span>MigrationWiz</span></div>
+            <a class="project-link" href="projects/m365-tenant-migration/">View Case Study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div>
+            <p class="project-type">SECURITY • COMPLIANCE</p>
+            <h3>M365 Security &amp; Secure Score Improvement</h3>
+            <p>Security hardening initiative that improved Microsoft Secure Score from 76% to 92%, covering authentication hardening, access controls, monitoring and Microsoft security capabilities.</p>
+            <div class="project-tags"><span>Secure Score</span><span>Defender</span><span>Purview</span><span>CA &amp; MFA</span></div>
+            <a class="project-link" href="projects/m365-security-score/">View Case Study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div>
+            <p class="project-type">IDENTITY • SECURITY</p>
+            <h3>Entra ID &amp; M365 Identity Security</h3>
+            <p>Practical identity-security work covering Conditional Access, MFA, Identity Protection, risky sign-in investigation, compromised-account remediation, PIM and hybrid identity.</p>
+            <div class="project-tags"><span>Entra ID</span><span>Conditional Access</span><span>MFA</span><span>Identity Protection</span></div>
+            <a class="project-link" href="projects/entra-id-m365-identity-security/">Coming Next ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">05</div>
+          <div>
+            <p class="project-type">MAIL FLOW • INTEGRATION</p>
+            <h3>Secure Printer Scan-to-Email Integration</h3>
+            <p>Secure scan-to-email integration using Postfix and Exchange Online, including SMTP authentication, TLS and mail-flow troubleshooting.</p>
+            <div class="project-tags"><span>Postfix</span><span>Exchange Online</span><span>SMTP</span><span>TLS</span></div>
+            <a class="project-link" href="projects/secure-printer-scan-email/">Coming Later ↗</a>
+          </div>
+        </article>
       </div>
-      <a class="project-link" href="projects/m365-tenant-migration/">View Case Study ↗</a>
-    </article>
-
-    <article class="project-card">
-      <div class="project-number">03</div>
-      <div class="project-meta">SECURITY • COMPLIANCE</div>
-      <h3>M365 Security &amp; Secure Score Improvement</h3>
-      <p>Security hardening initiative that improved Microsoft Secure Score from 76% to 92%, covering authentication hardening, access controls, monitoring and Microsoft security capabilities.</p>
-      <div class="project-tags">
-        <span>Secure Score</span><span>Defender</span><span>Purview</span><span>CA &amp; MFA</span>
-      </div>
-      <a class="project-link" href="projects/m365-security-score/">View Case Study ↗</a>
-    </article>
-
-    <article class="project-card">
-      <div class="project-number">04</div>
-      <div class="project-meta">IDENTITY • SECURITY</div>
-      <h3>Entra ID &amp; M365 Identity Security</h3>
-      <p>Practical identity-security work covering Conditional Access, MFA, Identity Protection, risky sign-in investigation, compromised-account remediation, PIM and hybrid identity.</p>
-      <div class="project-tags">
-        <span>Entra ID</span><span>Conditional Access</span><span>MFA</span><span>Identity Protection</span>
-      </div>
-      <a class="project-link" href="projects/entra-id-m365-identity-security/">Coming Next ↗</a>
-    </article>
-
-    <article class="project-card">
-      <div class="project-number">05</div>
-      <div class="project-meta">MAIL FLOW • INTEGRATION</div>
-      <h3>Secure Printer Scan-to-Email Integration</h3>
-      <p>Secure scan-to-email integration using Postfix and Exchange Online, including SMTP authentication, TLS and mail-flow troubleshooting.</p>
-      <div class="project-tags">
-        <span>Postfix</span><span>Exchange Online</span><span>SMTP</span><span>TLS</span>
-      </div>
-      <a class="project-link" href="projects/secure-printer-scan-email/">Coming Later ↗</a>
-    </article>
-
-  </div>
-</section>
+    </section>
 
     <section id="contact" class="section contact-section">
       <div class="section-label">05 — CONTACT</div>
