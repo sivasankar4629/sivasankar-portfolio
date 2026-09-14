@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="930" viewBox="0 0 1200 930">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".28"/></filter></defs>
+<rect width="1200" height="930" rx="28" fill="url(#bg)"/>
+<text x="60" y="65" fill="#edf1f5" font-family="Arial" font-size="30" font-weight="700">Entra ID &amp; Microsoft 365 Identity Security</text>
+<text x="60" y="95" fill="#9ba6b2" font-family="Arial" font-size="16">Sanitized high-level architecture and operational identity-security flow</text>
+<g filter="url(#shadow)"><rect x="70" y="145" width="1060" height="110" rx="20" fill="#11151a" stroke="#33404c"/>
+<text x="100" y="178" fill="#7dd3fc" font-family="Arial" font-size="14" font-weight="700">IDENTITIES</text>
+<rect x="100" y="195" width="430" height="38" rx="10" fill="#171d24" stroke="#27303a"/><text x="315" y="220" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="15">Cloud identities</text>
+<rect x="570" y="195" width="430" height="38" rx="10" fill="#171d24" stroke="#27303a"/><text x="785" y="220" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="15">On-premises AD identities</text></g>
+<line x1="600" y1="255" x2="600" y2="290" stroke="#7dd3fc" stroke-width="3"/><polygon points="600,304 592,289 608,289" fill="#7dd3fc"/>
+<g filter="url(#shadow)"><rect x="260" y="305" width="680" height="105" rx="20" fill="#11151a" stroke="#33404c"/>
+<text x="600" y="340" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="14" font-weight="700">HYBRID IDENTITY</text>
+<text x="600" y="370" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="19" font-weight="700">Microsoft Entra Connect</text>
+<text x="600" y="394" text-anchor="middle" fill="#9ba6b2" font-family="Arial" font-size="14">Immutable ID • Hard Match • Soft Match • PHS</text></g>
+<line x1="600" y1="410" x2="600" y2="445" stroke="#7dd3fc" stroke-width="3"/><polygon points="600,459 592,444 608,444" fill="#7dd3fc"/>
+<g filter="url(#shadow)"><rect x="180" y="460" width="840" height="125" rx="20" fill="#11151a" stroke="#33404c"/>
+<text x="600" y="496" text-anchor="middle" fill="#7dd3fc" font-family="Arial" font-size="14" font-weight="700">MICROSOFT ENTRA ID</text>
+<rect x="215" y="515" width="180" height="43" rx="10" fill="#171d24" stroke="#27303a"/><text x="305" y="542" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="14">Identity Protection</text>
+<rect x="410" y="515" width="180" height="43" rx="10" fill="#171d24" stroke="#27303a"/><text x="500" y="542" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="14">Authentication</text>
+<rect x="605" y="515" width="180" height="43" rx="10" fill="#171d24" stroke="#27303a"/><text x="695" y="542" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="14">PIM</text>
+<rect x="800" y="515" width="180" height="43" rx="10" fill="#171d24" stroke="#27303a"/><text x="890" y="542" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="14">B2B / Guests</text></g>
+<line x1="600" y1="585" x2="600" y2="620" stroke="#7dd3fc" stroke-width="3"/><polygon points="600,634 592,619 608,619" fill="#7dd3fc"/>
+<g filter="url(#shadow)"><rect x="260" y="635" width="680" height="105" rx="20" fill="#11151a" stroke="#33404c"/>
+<text x="600" y="670" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="14" font-weight="700">ACCESS DECISION</text>
+<text x="600" y="702" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="19" font-weight="700">Conditional Access + MFA</text>
+<text x="600" y="726" text-anchor="middle" fill="#9ba6b2" font-family="Arial" font-size="14">Authentication requirements • policy scope • access controls</text></g>
+<line x1="600" y1="740" x2="600" y2="775" stroke="#7dd3fc" stroke-width="3"/><polygon points="600,789 592,774 608,774" fill="#7dd3fc"/>
+<g filter="url(#shadow)"><rect x="70" y="790" width="1060" height="70" rx="18" fill="#11151a" stroke="#33404c"/>
+<text x="600" y="820" text-anchor="middle" fill="#edf1f5" font-family="Arial" font-size="17" font-weight="700">Microsoft 365 workloads</text>
+<text x="600" y="845" text-anchor="middle" fill="#9ba6b2" font-family="Arial" font-size="14">Exchange Online • Teams • SharePoint • OneDrive • Other services</text></g>
+<line x1="70" y1="885" x2="1130" y2="885" stroke="#33404c"/>
+<text x="600" y="912" text-anchor="middle" fill="#7dd3fc" font-family="Arial" font-size="14" font-weight="700">OPERATIONS: Risk Monitoring → Investigation → Containment → Remediation → Validation</text>
+</svg>
